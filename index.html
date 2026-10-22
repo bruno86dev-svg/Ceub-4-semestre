@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PortfolioHUB | Bruno Rodrigues dos Santos</title>
+<style>
+  :root{
+    --bg:#0d1117; --card:#161b22; --border:#30363d; --text:#e6edf3;
+    --muted:#8b949e; --accent:#58a6ff; --accent2:#3fb950;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    background:var(--bg); color:var(--text); line-height:1.6;
+  }
+  header{
+    padding:3rem 1.5rem 2rem; text-align:center;
+    border-bottom:1px solid var(--border);
+  }
+  header h1{margin:0 0 .3rem; font-size:2rem;}
+  header p{color:var(--muted); margin:.2rem 0;}
+  .badges{margin-top:1rem; display:flex; gap:.5rem; justify-content:center; flex-wrap:wrap;}
+  .badge{
+    background:var(--card); border:1px solid var(--border); border-radius:999px;
+    padding:.3rem .9rem; font-size:.85rem; color:var(--accent);
+  }
+  main{max-width:900px; margin:0 auto; padding:2rem 1.5rem 4rem;}
+  section{margin-bottom:2.5rem;}
+  h2{
+    font-size:1.3rem; border-left:4px solid var(--accent); padding-left:.6rem;
+    margin-bottom:1rem;
+  }
+  .card{
+    background:var(--card); border:1px solid var(--border); border-radius:10px;
+    padding:1.2rem 1.4rem; margin-bottom:1rem;
+  }
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem;}
+  .grid .card h3{margin-top:0; font-size:1.05rem; color:var(--accent);}
+  .grid .card p{color:var(--muted); font-size:.92rem; margin-bottom:.6rem;}
+  .grid .card a{color:var(--accent2); text-decoration:none; font-size:.9rem; font-weight:600;}
+  .grid .card a:hover{text-decoration:underline;}
+  .tags{display:flex; gap:.4rem; flex-wrap:wrap; margin-top:.8rem;}
+  .tag{
+    background:#1f2d3d; border:1px solid var(--border); border-radius:6px;
+    padding:.15rem .6rem; font-size:.78rem; color:var(--muted);
+  }
+  footer{
+    text-align:center; padding:2rem 1rem; border-top:1px solid var(--border);
+    color:var(--muted); font-size:.9rem;
+  }
+  footer a{color:var(--accent); text-decoration:none; margin:0 .5rem;}
+  footer a:hover{text-decoration:underline;}
+  .status{
+    display:inline-block; font-size:.75rem; padding:.15rem .55rem; border-radius:6px;
+    margin-left:.4rem; vertical-align:middle;
+  }
+  .status.ok{background:#0d2b1a; color:#3fb950; border:1px solid #1f6f3d;}
+  .status.wip{background:#2b230d; color:#e3b341; border:1px solid #6f5a1f;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Bruno Rodrigues dos Santos</h1>
+  <p>Ciência da Computação — CEUB · 4º semestre · RA 22502415</p>
+  <p>Técnico Industrial (CFT) · Eletricista de Manutenção II / Técnico de Redes — In-Haus Industrial (Grupo GPS)</p>
+  <div class="badges">
+    <span class="badge">Interesse principal: Redes & Cibersegurança</span>
+    <span class="badge">GitHub: bruno86dev-svg</span>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <h2>Perfil</h2>
+    <div class="card">
+      <p>
+        Sou técnico industrial com registro ativo no CFT (Conselho Federal dos Técnicos Industriais) e atuo
+        atualmente como Eletricista de Manutenção II / Técnico de Redes na In-Haus Industrial (Grupo GPS),
+        prestando serviços de infraestrutura e redes para o Banco do Brasil. Minha trajetória começou nas
+        telecomunicações, experiência que despertou meu interesse por tecnologia e redes de computadores — hoje
+        canalizado nos estudos de Ciência da Computação no CEUB.
+      </p>
+      <p>
+        Este PortfolioHUB reúne os projetos, entregas e evidências de aprendizado produzidos ao longo da minha
+        trajetória acadêmica, com foco especial no Bootcamp I.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Interesses e Carreira</h2>
+    <div class="card">
+      <p><strong>Área de maior interesse:</strong> Redes e Cibersegurança.</p>
+      <p>
+        A vivência prévia em telecomunicações e a atuação atual como técnico de redes aproximaram-me do universo
+        de infraestrutura, conectividade e segurança da informação. O objetivo deste Study Hub / PortfolioHUB é
+        organizar meu aprendizado de forma profissional, documentar entregas técnicas (como versionamento com
+        Git/GitHub e integrações com ferramentas como Google Gemini) e construir um histórico consultável que
+        amplie oportunidades de carreira na área de TI, com ênfase em Redes e Cibersegurança.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projetos & Disciplinas</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3>Bootcamp I <span class="status wip">em andamento</span></h3>
+        <p>Projeto Study Hub / PortfolioHUB — arquitetura de repositório, versionamento com Git e integração com Google Gemini.</p>
+        <a href="02_Disciplinas_Atuais/4_Semestre/Bootcamp01/">Ver pasta →</a>
+        <div class="tags"><span class="tag">Git</span><span class="tag">GitHub Pages</span><span class="tag">Gemini</span></div>
+      </div>
+
+      <div class="card">
+        <h3>Algoritmos e Estrutura de Dados <span class="status ok">concluída</span></h3>
+        <p>Atividades práticas e exercícios da disciplina.</p>
+        <a href="02_Disciplinas_Atuais/4_Semestre/Algoritmo_e_Estrutura_de_Dados/">Ver pasta →</a>
+      </div>
+
+      <div class="card">
+        <h3>Análise e Projetos de Sistemas <span class="status ok">concluída</span></h3>
+        <p>Entregas e documentação da disciplina.</p>
+        <a href="02_Disciplinas_Atuais/4_Semestre/Analise_e_Projetos_de_Sistema/">Ver pasta →</a>
+      </div>
+
+      <div class="card">
+        <h3>Cálculo para Computação <span class="status ok">concluída</span></h3>
+        <p>Resumos e exercícios da disciplina.</p>
+        <a href="02_Disciplinas_Atuais/4_Semestre/Calculo_para_Computacao/">Ver pasta →</a>
+      </div>
+
+      <div class="card">
+        <h3>Desenvolvimento Web <span class="status wip">em andamento</span></h3>
+        <p>Projetos práticos da disciplina.</p>
+        <a href="02_Disciplinas_Atuais/4_Semestre/Desenvolvimento_Web/">Ver pasta →</a>
+      </div>
+
+      <div class="card">
+        <h3>Gestão de Projetos <span class="status wip">em andamento</span></h3>
+        <p>Mapas conceituais e entregas da disciplina.</p>
+        <a href="02_Disciplinas_Atuais/4_Semestre/Gestao_de_Projetos/">Ver pasta →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Contato</h2>
+    <div class="card">
+      <p>📧 bruno86.dev@gmail.com</p>
+      <p>💼 <a href="https://www.linkedin.com/in/bruno-r-santos86" style="color:var(--accent);">linkedin.com/in/bruno-r-santos86</a></p>
+      <p>💻 <a href="https://github.com/bruno86dev-svg" style="color:var(--accent);">github.com/bruno86dev-svg</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Study Hub / PortfolioHUB — Bruno Rodrigues dos Santos — Ciência da Computação, CEUB</p>
+  <a href="https://github.com/bruno86dev-svg/Ceub-4-semestre">Repositório no GitHub</a> ·
+  <a href="https://www.linkedin.com/in/bruno-r-santos86">LinkedIn</a>
+</footer>
+
+</body>
+</html>
